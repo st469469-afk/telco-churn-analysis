@@ -11,7 +11,7 @@ def load_telco_churn() -> pd.DataFrame:
     Завантажує датасет Telco Customer Churn з Kaggle.
     Копіює CSV у data/raw і повертає DataFrame.
     """
-    root = Path(__file__).parent.parent  # корінь проєкту ( де знаходиться loaders.py )
+    root = Path(__file__).parent.parent  
     raw_dir = root / "data" / "raw"
     raw_dir.mkdir(parents=True, exist_ok=True)
 
